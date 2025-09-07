@@ -1,0 +1,191 @@
+{
+  "id": "smashup",
+  "name": "Smash Up",
+  "publisher": "Alderac Entertainment Group",
+  "version": "1.0.0",
+  "elementTypes": {
+    "factions": {
+      "id": "factions",
+      "name": "Faction",
+      "pluralName": "Factions",
+      "isRequired": true,
+      "properties": ["theme", "mechanics"]
+    },
+    "bases": {
+      "id": "bases",
+      "name": "Base",
+      "pluralName": "Bases",
+      "isRequired": true,
+      "properties": ["breakPoint", "rewards"]
+    }
+  },
+  "rules": {
+    "playerCountRules": {
+      "2": {
+        "elementCounts": {
+          "factions": 4,
+          "bases": 16
+        },
+        "modifiers": {
+          "factionsPerPlayer": 2
+        }
+      },
+      "3": {
+        "elementCounts": {
+          "factions": 6,
+          "bases": 18
+        },
+        "modifiers": {
+          "factionsPerPlayer": 2
+        }
+      },
+      "4": {
+        "elementCounts": {
+          "factions": 8,
+          "bases": 20
+        },
+        "modifiers": {
+          "factionsPerPlayer": 2
+        }
+      }
+    },
+    "requiredElementTypes": ["factions", "bases"],
+    "specialRules": {
+      "factionsPerPlayer": 2,
+      "basesPerPlayer": 1,
+      "basesOnTable": "playerCount + 1"
+    }
+  },
+  "uiSchema": {
+    "sections": [
+      {
+        "id": "factions",
+        "displayName": "Factions",
+        "icon": "groups",
+        "priority": 1,
+        "showWhenEmpty": true,
+        "subtitle": "Choose your combo!",
+        "additionalFields": ["theme"],
+        "showSearch": true,
+        "showBulkActions": true,
+        "availableFilters": [
+          {
+            "id": "expansion_filter",
+            "displayName": "Expansion",
+            "fieldName": "expansion",
+            "type": "dropdown",
+            "showAll": true
+          },
+          {
+            "id": "theme_filter",
+            "displayName": "Theme",
+            "fieldName": "theme",
+            "type": "dropdown",
+            "showAll": true
+          }
+        ],
+        "displayConfig": {
+          "iconField": "theme",
+          "iconMappings": {
+            "Adventure": {
+              "iconData": "⚓",
+              "type": "emoji"
+            },
+            "Stealth": {
+              "iconData": "🥷",
+              "type": "emoji"
+            },
+            "Undead": {
+              "iconData": "🧟",
+              "type": "emoji"
+            },
+            "Technology": {
+              "iconData": "🤖",
+              "type": "emoji"
+            },
+            "Prehistoric": {
+              "iconData": "🦕",
+              "type": "emoji"
+            },
+            "Magic": {
+              "iconData": "🧙",
+              "type": "emoji"
+            },
+            "Chaos": {
+              "iconData": "🃏",
+              "type": "emoji"
+            },
+            "Sci-Fi": {
+              "iconData": "👽",
+              "type": "emoji"
+            }
+          },
+          "tagConfigs": [
+            {
+              "fieldName": "mechanics",
+              "displayName": "Mechanics",
+              "style": "chip",
+              "colorMappings": {
+                "Movement": "#42A5F5",
+                "Destruction": "#EF5350",
+                "Card Draw": "#66BB6A",
+                "Numbers": "#AB47BC",
+                "Recursion": "#26A69A",
+                "Efficiency": "#FFCA28",
+                "Synergy": "#FF7043",
+                "Power": "#8D6E63",
+                "Control": "#78909C",
+                "Return": "#5C6BC0",
+                "Disruption": "#EC407A",
+                "Surprise": "#FFA726"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "bases",
+        "displayName": "Bases", 
+        "icon": "location_city",
+        "priority": 2,
+        "showWhenEmpty": true,
+        "subtitle": "Fight for control",
+        "additionalFields": ["breakPoint"]
+      }
+    ],
+    "gameSpecificSections": [
+      {
+        "id": "game_setup",
+        "displayName": "Game Setup",
+        "type": "calculated",
+        "showAlways": true,
+        "icon": "settings",
+        "fields": ["factionsPerPlayer", "basesOnTable"]
+      }
+    ],
+    "layoutOptions": {
+      "showItemExpansions": true,
+      "sectionStyle": "card",
+      "showSectionIcons": true, 
+      "compactMode": false
+    }
+  },
+  "gameOptions": {
+    "numberOfPlayers": {
+      "type": "integer",
+      "minValue": 2,
+      "maxValue": 4,
+      "defaultValue": 2,
+      "displayName": "Number of Players",
+      "description": "How many players will be playing the game",
+      "category": "setup",
+      "isVisible": true
+    }
+  },
+  "metadata": {
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "description": "Shuffle up two factions to create a devastating combo and compete for control of bases!",
+    "gameType": "deck_building"
+  }
+}

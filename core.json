@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "gameInfo": {
+    "name": "Smash Up",
+    "publisher": "Alderac Entertainment Group"
+  },
+  "expansion": {
+    "id": "core",
+    "name": "Core",
+    "releaseYear": 2012,
+    "factions": [
+      {
+        "name": "Pirates",
+        "theme": "Adventure",
+        "mechanics": ["Movement", "Destruction"]
+      },
+      {
+        "name": "Ninja",
+        "theme": "Stealth",
+        "mechanics": ["Movement", "Card Draw"]
+      },
+      {
+        "name": "Zombies",
+        "theme": "Undead",
+        "mechanics": ["Recursion", "Numbers"]
+      },
+      {
+        "name": "Robots",
+        "theme": "Technology",
+        "mechanics": ["Efficiency", "Synergy"]
+      },
+      {
+        "name": "Dinosaurs",
+        "theme": "Prehistoric",
+        "mechanics": ["Power", "Destruction"]
+      },
+      {
+        "name": "Wizards",
+        "theme": "Magic",
+        "mechanics": ["Card Draw", "Control"]
+      },
+      {
+        "name": "Tricksters",
+        "theme": "Chaos",
+        "mechanics": ["Disruption", "Surprise"]
+      },
+      {
+        "name": "Aliens",
+        "theme": "Sci-Fi",
+        "mechanics": ["Return", "Control"]
+      }
+    ],
+    "bases": [
+      {
+        "name": "The Homeworld",
+        "breakPoint": 23,
+        "rewards": [4, 2, 1]
+      },
+      {
+        "name": "The Mothership",
+        "breakPoint": 21,
+        "rewards": [4, 2, 1]
+      },
+      {
+        "name": "Jungle Oasis",
+        "breakPoint": 18,
+        "rewards": [4, 2, 1]
+      },
+      {
+        "name": "Tar Pits",
+        "breakPoint": 18,
+        "rewards": [4, 2, 1]
+      },
+      {
+        "name": "Ninja Dojo",
+        "breakPoint": 21,
+        "rewards": [4, 2, 1]
+      },
+      {
+        "name": "Temple Of Goju",
+        "breakPoint": 20,
+        "rewards": [4, 2, 1]
+      },
+      {
+        "name": "The Grey Opal",
+        "breakPoint": 20,
+        "rewards": [4, 2, 1]
+      },
+      {
+        "name": "Tortuga",
+        "breakPoint": 20,
+        "rewards": [4, 2, 1]
+      },
+      {
+        "name": "Factory 436-1337",
+        "breakPoint": 21,
+        "rewards": [4, 2, 1]
+      }
+    ]
+  }
+}
