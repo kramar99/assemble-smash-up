@@ -24,7 +24,7 @@
       "2": {
         "elementCounts": {
           "factions": 4,
-          "bases": 16
+          "bases": 3
         },
         "modifiers": {
           "factionsPerPlayer": 2
@@ -33,7 +33,7 @@
       "3": {
         "elementCounts": {
           "factions": 6,
-          "bases": 18
+          "bases": 4
         },
         "modifiers": {
           "factionsPerPlayer": 2
@@ -42,7 +42,7 @@
       "4": {
         "elementCounts": {
           "factions": 8,
-          "bases": 20
+          "bases": 5
         },
         "modifiers": {
           "factionsPerPlayer": 2
