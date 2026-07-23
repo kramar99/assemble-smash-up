@@ -11,41 +11,49 @@
     "factions": [
       {
         "name": "Pirates",
+        "displayName": "Pirates",
         "theme": "Adventure",
         "mechanics": ["Movement", "Destruction"]
       },
       {
         "name": "Ninja",
+        "displayName": "Ninja",
         "theme": "Stealth",
         "mechanics": ["Movement", "Card Draw"]
       },
       {
         "name": "Zombies",
+        "displayName": "Zombies",
         "theme": "Undead",
         "mechanics": ["Recursion", "Numbers"]
       },
       {
         "name": "Robots",
+        "displayName": "Robots",
         "theme": "Technology",
         "mechanics": ["Efficiency", "Synergy"]
       },
       {
         "name": "Dinosaurs",
+        "displayName": "Dinosaurs",
         "theme": "Prehistoric",
         "mechanics": ["Power", "Destruction"]
       },
       {
         "name": "Wizards",
+        "displayName": "Wizards",
         "theme": "Magic",
         "mechanics": ["Card Draw", "Control"]
       },
       {
         "name": "Tricksters",
+        "displayName": "Tricksters",
         "theme": "Chaos",
         "mechanics": ["Disruption", "Surprise"]
       },
       {
         "name": "Aliens",
+        "displayName": "Aliens",
         "theme": "Sci-Fi",
         "mechanics": ["Return", "Control"]
       }
@@ -53,46 +61,55 @@
     "bases": [
       {
         "name": "The Homeworld",
+        "displayName": "The Homeworld",
         "breakPoint": 23,
         "rewards": [4, 2, 1]
       },
       {
         "name": "The Mothership",
+        "displayName": "The Mothership",
         "breakPoint": 21,
         "rewards": [4, 2, 1]
       },
       {
         "name": "Jungle Oasis",
+        "displayName": "Jungle Oasis",
         "breakPoint": 18,
         "rewards": [4, 2, 1]
       },
       {
         "name": "Tar Pits",
+        "displayName": "Tar Pits",
         "breakPoint": 18,
         "rewards": [4, 2, 1]
       },
       {
         "name": "Ninja Dojo",
+        "displayName": "Ninja Dojo",
         "breakPoint": 21,
         "rewards": [4, 2, 1]
       },
       {
         "name": "Temple Of Goju",
+        "displayName": "Temple Of Goju",
         "breakPoint": 20,
         "rewards": [4, 2, 1]
       },
       {
         "name": "The Grey Opal",
+        "displayName": "The Grey Opal",
         "breakPoint": 20,
         "rewards": [4, 2, 1]
       },
       {
         "name": "Tortuga",
+        "displayName": "Tortuga",
         "breakPoint": 20,
         "rewards": [4, 2, 1]
       },
       {
         "name": "Factory 436-1337",
+        "displayName": "Factory 436-1337",
         "breakPoint": 21,
         "rewards": [4, 2, 1]
       }
